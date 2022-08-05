@@ -3,7 +3,7 @@
         display: flex;
         margin-top: 5rem;
         padding: 0 10rem;
-        @include responive(tab-port) {
+        @include responive(tab-land) {
             flex-direction: column;
             margin-top: 3rem;
         }
@@ -41,6 +41,7 @@
     }
 
 }
-.fa-solid{
+.fa-solid,
+.fa-brands{
    color: var(--color-gold);
 }

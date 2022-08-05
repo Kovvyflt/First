@@ -1,3 +1,7 @@
+.container{
+    position: relative;
+}
+
 .portfolio{
     width: 100%;
 }
@@ -49,4 +53,10 @@
     padding: 8rem;
     background-color: var(--color-secondary-dark); 
    
+}
+
+.section-footer{
+    border-top: 2px solid var(--color-primary-darker);
+    padding: 10rem;
+    background-color: var(--color-secondary-dark);
 }

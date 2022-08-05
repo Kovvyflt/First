@@ -13,11 +13,32 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon.ico">
     <title>Portfolio | My-works</title>
 </head>
-<body>
+<body id="body ">
 
     <div class="container">
-        <main class="portfolio">
 
+        <div class="navigation" id="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
+
+            <label for="nav-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+
+            <div class="navigation__background" id="background">&nbsp;</div>
+
+
+            <nav class="navigation__nav" id="nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#section-cover" class="navigation__link"><span>01.</span>Cover letter</a></li>
+                    <li class="navigation__item"><a href="#section-services" class="navigation__link"><span>02.</span>Services</a></li>
+                    <li class="navigation__item"><a href="#section-stack" class="navigation__link"><span>03.</span>Stacks</a></li>
+                    <li class="navigation__item"><a href="#section-form" class="navigation__link"><span>04.</span>Contact Us</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+            
+        <main class="portfolio">
             <section class="section-main">
                 <div class="bg-video">
                     <video class="bg-video__content" autoplay muted loop>
@@ -35,7 +56,7 @@
                 </div>
             </section>
 
-            <section class="section-cover">
+            <section class="section-cover" id="section-cover">
                 <div class="features__header">
                     <h4 class="heading-secondary u-margin-small">Cover</h4>
                 </div>
@@ -75,7 +96,7 @@
                 
             </section>
 
-            <section class="section-services">
+            <section class="section-services" id="section-services">
                 <div class="features">
                     <div class="features__header">
                         <h4 class="heading-secondary u-margin-small">Services</h4>
@@ -127,7 +148,7 @@
                 <button class="btn btn-gold u-margin-top-medium">Download CV <span>&rarr;</span></button>
             </section>
 
-            <section class="section-stack">
+            <section class="section-stack" id="section-stack">
                 <div class="features__header">
                     <h4 class="heading-secondary u-margin-small">My stacks</h4>
                 </div>
@@ -271,7 +292,7 @@
               
             </section>
 
-            <section class="section-form">
+            <section class="section-form" id="section-form">
                 <div class="features__header">
                     <h4 class="heading-secondary u-margin-small">Get in touch</h4>
                 </div>
@@ -306,8 +327,57 @@
 
 
         <footer class="footer">
+
             <section class="section-footer">
-                
+
+                <div class="footer__box">
+
+                    <div class="footer-heading">
+                        <h3 class=""><i class="fa-solid fa-earth-africa fa-4x"></i></h3>
+                        <h2 class="heading-secondary u-margin-top-small">Kovvy</h2>
+                    </div>
+    
+                    <div class="footer__content">
+    
+                        <div class="footer__initial">
+                            <div class="footer__initial--box">
+                                <h2 class="footer__initial--heading">Name</h2>
+                                <p class="footer__initial--paragraph">Soyinka Kayode</p>
+            
+                                <h2 class="footer__initial--heading">Role</h2>
+                                <p class="footer__initial--paragraph">Web Developer</p>
+            
+                                <h2 class="footer__initial--heading">Email</h2>
+                                <p class="footer__initial--paragraph">Covshow5@gmail.com</p>
+            
+                                <h2 class="footer__initial--heading">Phone</h2>
+                                <p class="footer__initial--paragraph">(+234) 814 134 5672</p>
+                            </div>
+            
+                           <figure class="footer__initial--signature">
+                                <img src="/img/signature.png" alt="" class="intial__img">
+                           </figure>
+                        </div>
+
+                        <div class="footer__socials">
+                            <ul class="footer__list">
+                                <li class="footer__item"><a href="" class="footer__link"> <i class="fa-brands fa-instagram fa-2x"></i> Instagram </a></li>
+                                <li class="footer__item"><a href="" class="footer__link"> <i class="fa-brands fa-twitter fa-2x"></i> Twitter </a></li>
+                                <li class="footer__item"><a href="" class="footer__link"> <i class="fa-brands fa-github fa-2x"></i> Instagram </a></li>
+                            </ul>
+                            
+                        </div>
+    
+                        <div class="footer__copyright">
+                            <p class="footer__paragraph">
+                                Built by <span class="footer__paragraph--inline">KAYODE</span>  for his online portfolio.Copyright © by Kayode. 
+                                You are <span class="footer__paragraph--inline"> 100% </span> allowed to use this design for your own portfolio but credit must be given to me 
+                                <span class="footer__paragraph--inline">THANK YOU</span>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
             </section>
         </footer>
     </div>
