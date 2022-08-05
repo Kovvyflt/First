@@ -1,0 +1,206 @@
+.stack{
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        padding: 4rem;
+        margin: auto;
+
+    }
+}
+
+
+.stacks{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    @include responive(tab-port) {
+        flex-direction: column; 
+    }
+
+    &__body{
+        width: 50%;
+        margin-bottom: 3rem;
+
+        @include responive(tab-port) {
+            width: 100%;
+            
+        }
+    }
+
+    &__content{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    &__progress{
+        width:80%;
+        height: 1rem;
+        background-color: var(--color-primary-2);
+        position: relative;
+        margin-right: .8rem;
+
+        &--bar{
+            height: 2rem;
+            background-color: var(--color-gold);
+            position: absolute;
+            z-index: 10;
+            margin-top: -.5rem;
+
+            &-1{
+                width: 90%;
+            }
+
+            &-2{
+                width: 75%;
+            }
+            &-3{
+                width: 40%;
+            }
+            &-4{
+                width: 20%;
+            }
+        }
+        &--text{
+            color: var(--color-gold);
+            font-size: 3rem;
+        }
+    }
+}
+
+.circular__stacks{
+    margin-bottom: 10rem;
+    display: flex;
+
+
+        @include responive(tab-port){
+            flex-wrap: wrap;
+           
+        }
+
+        @include responive(phone){
+            text-align: center;
+            
+        }  
+    
+    
+    &--body{
+        width: 33.33%;
+
+        @include responive(tab-port){
+            width: 50%;
+            margin-bottom: 7rem;
+        }
+
+        @include responive(phone){
+            width: 50%;
+            padding: 4rem;
+        }
+
+        @include responive(sm-phone){
+            width: 100%;
+            padding: 4rem;
+        }
+    }
+
+    &--circle{
+        width: 16rem;
+        height: 16rem;
+        border: 1px solid var(--color-gold);
+        border-radius: 50%;
+        padding: 2rem;
+        position: relative;
+
+        @include responive(tab-land){
+            width: 18rem;
+            height: 18rem;
+         }
+
+
+        @include responive(tab-port){
+           width: 20rem;
+           height: 20rem;
+        }
+
+        @include responive(phone){
+            width: 27rem;
+            height: 27rem;
+        }    
+        
+        
+        box-shadow: .6rem .6rem 1rem -1px rgba(0,0,0,0.15),
+                        .6rem .6rem 1rem -1px rgba(0,0,0,0.8);
+
+        &-progress{
+            height: 12rem;
+            width: 12rem;
+            border-radius: 50%;
+            border:1px solid var(--color-gold);
+             display: flex;
+             align-items: center;
+             justify-content: center;
+
+             @include responive(tab-land){
+                width: 14rem;
+                height: 14rem;
+             }
+             
+             @include responive(tab-port){
+                height: 16rem;
+                width: 16rem;
+            }
+
+            @include responive(phone){
+                width: 22rem;
+                height: 22rem;
+            }  
+
+            box-shadow: inset .6rem .6rem 1rem -1px rgba(0,0,0,0.15),
+                    .6rem .6rem 1rem -1px rgba(0,0,0,0.8) ;
+
+            &-1{
+                stroke-dasharray: 420;    
+            }
+
+            &-2{
+                stroke-dasharray: 330;
+            }
+
+            &-3{
+                stroke-dasharray: 380;
+            }
+
+            &-4{
+                stroke-dasharray: 310;
+            }
+        }
+
+        &-svg{
+            fill: none;
+            stroke: #ae9f6a;
+            stroke-width: 2rem;
+            stroke-dashoffset: 0;
+            animation:  stroke 2s linear forwards;
+
+            @include responive(phone){
+                stroke-width: 3rem;
+            }  
+           
+        }
+    }
+}
+
+
+#number{
+    font-size: 3rem;
+    color: var(--color-gold);
+}
+
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}

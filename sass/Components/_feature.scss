@@ -1,0 +1,46 @@
+.features{ 
+    &__content{
+        display: flex;
+        margin-top: 5rem;
+        padding: 0 10rem;
+        @include responive(tab-port) {
+            flex-direction: column;
+            margin-top: 3rem;
+        }
+    }
+
+    &__box{
+        padding: 4rem;
+        box-shadow: 0 2rem 4rem rgba(0,0,0,.6);
+        text-align: center;
+        transition: all .2s;
+        @include responive(tab-port) {
+            margin-top: 5rem;
+        }
+
+        &:not(:last-child){
+            margin-right: 3rem;
+
+            @include responive(tab-port) {
+              margin-right: 0;
+            }
+        }
+        &:hover{
+            transform: translateY(-2rem) scale(1.1);
+
+            @include responive(tab-port) {
+              transform: translateY(-1rem) scale(1.05);
+            }
+        }
+       
+    }
+
+    &__header{
+        text-align: center;
+        margin: 0 auto;
+    }
+
+}
+.fa-solid{
+   color: var(--color-gold);
+}

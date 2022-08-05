@@ -1,0 +1,52 @@
+.portfolio{
+    width: 100%;
+}
+
+.section-main{
+   height: 100vh;
+   position: relative;
+   text-align: center;
+}
+.section-services{
+    padding: 10rem;
+    background-color: var(--color-secondary-dark);
+    text-align: center;
+    border-top: 2px solid var(--color-primary-darker);
+
+    @include responive(tab-port) {
+        padding: 10rem;
+    }
+
+    @include responive(phone) {
+        padding: 5rem;
+    }
+}
+
+.section-stack{
+    border-top: 2px solid var(--color-primary-darker);
+    padding: 10rem;
+    background-color: var(--color-secondary-dark);
+
+    @include responive(tab-port) {
+        padding: 5rem;
+    }
+}
+
+.section-cover{
+    padding: 10rem;
+    background-color: var(--color-secondary-dark);
+
+    @include responive(tab-port) {
+        padding: 10rem;
+    }
+    @include responive(phone) {
+        padding: 5rem;
+    }
+}
+
+.section-form{
+    border-top: 2px solid var(--color-primary-darker);
+    padding: 8rem;
+    background-color: var(--color-secondary-dark); 
+   
+}

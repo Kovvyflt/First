@@ -1,0 +1,70 @@
+.scroll__text{
+    color: var(--color-gold);
+    font-size: 1.8rem;
+    font-weight: bolder;
+}
+
+.intial{
+    &__heading{
+        color: var(--color-gold);
+        font-size: 2rem;
+        line-height: 3rem;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+    
+
+    &__paragraph{
+        color: var(--color-white);
+        font-size: $default-size;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+
+        &:not(:last-child){
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.heading-primary{
+    color: var(--color-gold);
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+.heading-secondary{
+    color: var(--color-gold);
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+.content{
+    &__paragraph{
+        color: var(--color-white);
+        font-size: 3rem;
+        text-transform: uppercase;
+    }
+}
+
+.features__paragraph{
+    color: var(--color-white);
+    font-size: $default-size;
+    line-height: 1.5;
+
+}
+
+.heading-tertiary{
+    font-size: 2rem;
+    color: var(--color-primary);
+    text-transform: uppercase;
+}
+
+.progress__heading{
+    color: var(--color-gold);
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.cover__text{
+   color: var(--color-gold);
+   font-size: 1.8rem; 
+}

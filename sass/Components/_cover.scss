@@ -1,0 +1,95 @@
+.cover{
+    display: flex;
+    width: 100%;
+    @include responive(tab-port) {
+        flex-direction: column;
+    }
+
+    &__letter{
+        flex: 0 0 50%;
+        padding: 2rem;
+
+        @include responive(tab-port) {
+            flex: 1;
+            padding: 1rem;
+        }
+    }
+
+    &--body{
+        flex: 1;
+        position: relative;
+        padding: 4rem;
+        margin-top: 7rem;
+
+        @include responive(tab-port) {
+            margin-top: 3rem;
+            padding: 8rem;
+        }
+        @include responive(phone) {
+            margin-top: 3rem;
+            padding: 9rem;
+        }
+
+
+        &__images{
+
+
+            &--photo{
+                position: absolute;
+                width: 55%;
+                box-shadow: 0 2rem 2.5rem rgba(0,0,0,0.3);
+                transition: all .2s;
+                border-radius: 3px;
+                z-index: 10;
+                outline-offset: 1rem;
+
+                @include responive(tab-port) {
+                    width: 33.333%;
+                }
+
+                &-p1{
+                    top: -2rem;
+                    left: 0;
+
+                    @include responive(tab-port) {
+                        top: 0;
+                        transform: scale(1.1);
+                    }
+                }
+    
+                &-p2{
+                    top: 2rem;
+                    right: -3rem;
+                    @include responive(tab-port) {
+                        right: 3rem;
+                        top: 0;
+                        transform: scale(1.1);
+                    }
+                }
+    
+                &-p3{
+                   top: 18rem;
+                    left: 20%;
+                    @include responive(tab-port) {
+                        top: 0;
+                        left: 30%;
+                        z-index: 20;
+                        transform: scale(1.1);
+                    }
+                }
+    
+                &:hover{
+                    outline: 3px solid var(--color-gold);
+                    transform: translateY(-.5rem) scale(1.05);
+                    box-shadow: 0 2.5rem 4rem  rgba(0,0,0,0.5) ;
+                    z-index: 20;
+                } 
+            }
+
+            &:hover &--photo:not(:hover){
+                transform: scale(.9);
+            }
+        }
+    }
+}
+

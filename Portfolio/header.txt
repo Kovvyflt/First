@@ -1,0 +1,41 @@
+   <div class="navigation__background">&nbsp;</div>
+            </div>
+            
+
+            <div class="side-nav">
+                <div class="scroll__percentage">
+                    <span class="scroll__text">01</span>
+                    <span class="scroll__bar">&nbsp;</span>
+                    <span class="scroll__text">05</span>
+                </div>
+
+                <div class="intials">
+                    <h2 class="intial__heading">Name</h2>
+                    <p class="intial__paragraph">Soyinka Kayode</p>
+
+                    <h2 class="intial__heading">Role</h2>
+                    <p class="intial__paragraph">Web Developer</p>
+
+                    <h2 class="intial__heading">Email</h2>
+                    <p class="intial__paragraph">Covshow5@gmail.com</p>
+
+                    <h2 class="intial__heading">Phone</h2>
+                    <p class="intial__paragraph">(+234) 814 134 5672</p>
+                </div>
+
+               <figure class="intial__signature">
+                    <img src="/img/signature.png" alt="" class="intial__img">
+               </figure>
+            </div>
+
+
+
+
+<header class="side-bar">
+            <div class="navigation">
+                <div class="toggle" id="toggle">
+                    <span class="toggle__menu">&nbsp;</span>
+                </div>
+
+             
+        </header>

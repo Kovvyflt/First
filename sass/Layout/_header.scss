@@ -1,0 +1,54 @@
+.toggle{
+    position: absolute;
+    top: 3rem;
+    left: 2rem;
+
+    &__menu{
+        &,
+        &::before,
+        &::after{
+            background-color: var(--color-white);
+            width: 3rem;
+            height: 4px;
+            display: inline-block;
+        }
+
+        &,
+        &::before,
+        &::after{
+            content: "";
+            position: absolute;
+            left: 0;
+        }
+
+        &::before{top: 2rem;}
+        &::after{top:1rem;}
+    }
+}
+
+.side-nav{
+    padding: 7rem 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include responive(tab-port) {
+        display: none;
+    }
+}
+
+
+.scroll{
+    &__percentage{
+        display: flex;
+        align-items: center;
+    }
+    &__bar{
+        background-color: var(--color-white);
+        width: 10rem;
+        height: 3px;
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+}
